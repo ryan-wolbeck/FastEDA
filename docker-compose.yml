@@ -1,0 +1,10 @@
+version: '3'
+services:
+    fasteda:
+        build: .
+        ports:
+            - "5001:8501"
+        volumes:
+            - .:/usr/src/app
+            - /data:/usr/src/data
+        restart: always
